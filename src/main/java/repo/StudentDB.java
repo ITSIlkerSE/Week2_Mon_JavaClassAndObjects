@@ -2,11 +2,16 @@ package repo;
 
 import model.Student;
 
-import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class StudentDB {
 
     private Student[] students;
+
+    @Override
+    public String toString() {
+        return Arrays.toString(students);
+    }
 
     public StudentDB(Student[] students){
         super();
@@ -14,7 +19,8 @@ public class StudentDB {
 
     }
 
-    public Student[] getStudents() {
+
+    public Student[] getAllStudents() {
         return students;
     }
 
@@ -22,6 +28,10 @@ public class StudentDB {
         this.students = students;
     }
 
+    public String randomStudent(Student[] students){
+        String tempArr = Arrays.toString(students);
+        return students[(int)(Math.random() * students.length)] + "";
+    }
 
 
 }
