@@ -1,8 +1,8 @@
 class Student {
 
-    String firstName = "Ilker";
-    String lastName = "Yildirim";
-    String university = "Otto-Friedrich Universität";
+    String firstName;
+    String lastName;
+    String university;
 
     String getFirstName(){
         return firstName;

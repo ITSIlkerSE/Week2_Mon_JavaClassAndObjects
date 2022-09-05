@@ -4,6 +4,10 @@ public class Main {
 
         Student myStudent = new Student();
 
+        myStudent.setFirstName("Ilker");
+        myStudent.setLastName("Yildirim");
+        myStudent.setUniversity("Otto Friedrich Universität");
+
 
         System.out.println(myStudent.getFirstName());
         System.out.println(myStudent.getLastName());
