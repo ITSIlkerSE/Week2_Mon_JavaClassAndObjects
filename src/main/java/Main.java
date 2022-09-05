@@ -13,6 +13,11 @@ public class Main {
 
         Student myStudent3 = new Student("Manu", "Wei-Min-Kao", "Uni Bonn", 44,"663G1");
 
+
+        Student[] students = {myStudent, myStudent2, myStudent3};
+
+        StudentDB studentArray = new StudentDB(students);
+
         System.out.println(myStudent);
 
         System.out.println(myStudent2);
