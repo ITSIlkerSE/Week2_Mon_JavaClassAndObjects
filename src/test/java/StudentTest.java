@@ -47,9 +47,22 @@ public class StudentTest {
         }
 
 
+/*
+        @Test
+
+        public void studentRandomizerTest(){
+
+            //Given
 
 
 
+            //When
+
+            //Then
+
+        }
+
+*/
 
 
 

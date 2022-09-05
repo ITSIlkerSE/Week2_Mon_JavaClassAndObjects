@@ -2,6 +2,7 @@ package repo;
 
 import model.Student;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class StudentDB {
@@ -13,7 +14,7 @@ public class StudentDB {
         return Arrays.toString(students);
     }
 
-    public StudentDB(Student[] students){
+    public StudentDB(Student[] students) {
         super();
         this.students = students;
 
@@ -28,10 +29,15 @@ public class StudentDB {
         this.students = students;
     }
 
-    public String randomStudent(Student[] students){
+    public String randomStudent(Student[] students) {
         String tempArr = Arrays.toString(students);
-        return students[(int)(Math.random() * students.length)] + "";
+        return students[(int) (Math.random() * students.length)] + "";
     }
 
+/*
+    public Student[] addStudent(String firstName, String lastName, String university, int age, String studentID) {
+        Student[] myStudent = new Student
 
+    }
+*/
 }
