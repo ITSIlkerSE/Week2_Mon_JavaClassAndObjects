@@ -8,7 +8,6 @@ public class Student {
     private String lastName;
     private String university;
     private int age;
-
     private String studentID;
 
     public Student(String firstName, String lastName, String university, int age, String studentID){

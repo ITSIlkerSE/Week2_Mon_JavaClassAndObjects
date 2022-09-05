@@ -2,11 +2,11 @@ package repo;
 
 import model.Student;
 
+import java.lang.reflect.Array;
+
 public class StudentDB {
 
-
     private Student[] students;
-
 
     public StudentDB(Student[] students){
         super();
@@ -21,4 +21,12 @@ public class StudentDB {
     public void setStudents(Student[] students) {
         this.students = students;
     }
+
+
+    public Array getAllStudents(){
+
+
+
+    }
+
 }

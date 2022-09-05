@@ -1,4 +1,5 @@
 import model.Student;
+import repo.StudentDB;
 
 public class Main {
 
@@ -12,13 +13,11 @@ public class Main {
 
         Student myStudent3 = new Student("Manu", "Wei-Min-Kao", "Uni Bonn", 44,"663G1");
 
-
         System.out.println(myStudent);
 
         System.out.println(myStudent2);
 
         System.out.println(myStudent3);
-
 
 
         if(myStudent.equals(myStudent2)){
