@@ -21,7 +21,14 @@ public class Main {
 
 
 
+        if(myStudent.equals(myStudent2)){
+            System.out.println("Es sind die gleichen Studenten!");
+        }else {
+            System.out.println("Es sind nicht die gleichen Studenten !");
+        }
+
     }
+
 
 
     }
