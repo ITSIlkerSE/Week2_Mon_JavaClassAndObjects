@@ -12,8 +12,8 @@ public class StudentTest {
 
         //Given
 
-        Student myStudent1 = new Student("Ilker", "Yildirim", "Otto Friedrich Uni", 16);
-        Student myStudent2 = new Student("Tom", "Rosenzweig", "Uni Flensburg", 26);
+        Student myStudent1 = new Student("Ilker", "Yildirim", "Otto Friedrich Uni", 16, "551E6");
+        Student myStudent2 = new Student("Tom", "Rosenzweig", "Uni Flensburg", 26, "561F7");
 
         //When
 
@@ -31,8 +31,8 @@ public class StudentTest {
 
             //Given
 
-            Student myStudent1 = new Student("Ilker", "Yildirim", "Otto Friedrich Uni", 16);
-            Student myStudent2 = new Student("Ilker", "Yildirim", "Otto Friedrich Uni", 16);
+            Student myStudent1 = new Student("Ilker", "Yildirim", "Otto Friedrich Uni", 16, "551E6");
+            Student myStudent2 = new Student("Ilker", "Yildirim", "Otto Friedrich Uni", 16, "551E6");
 
             //When
 

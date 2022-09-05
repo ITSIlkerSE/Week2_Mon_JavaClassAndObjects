@@ -9,12 +9,15 @@ public class Student {
     private String university;
     private int age;
 
-    public Student(String firstName, String lastName, String university, int age){
+    private String studentID;
+
+    public Student(String firstName, String lastName, String university, int age, String studentID){
         super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.university = university;
         this.age = age;
+        this.studentID = studentID;
     }
 
 
@@ -36,9 +39,13 @@ public class Student {
     }
 
     public int getAge(){
+
         return age;
     }
 
+    public String getStudentID(){
+        return studentID;
+    }
 
     public void setFirstName (String firstName) {
         this.firstName = firstName;
@@ -58,11 +65,20 @@ public class Student {
     }
 
     public void setAge(int age){
+
         this.age = age;
     }
 
+    public void setStudentID(String studentID){
+        this.studentID = studentID;
+    }
+
     public String toString() {
-        return this.firstName + " " + this.lastName + " " + this.university + " " + this.age;
+        return this.firstName
+                + " " + this.lastName
+                + " " + this.university
+                + " " + this.age
+                + " " + this.studentID;
     }
 
 
@@ -76,7 +92,8 @@ public class Student {
         if (age != student.age) return false;
         if (!Objects.equals(firstName, student.firstName)) return false;
         if (!Objects.equals(lastName, student.lastName)) return false;
-        return Objects.equals(university, student.university);
+        if (!Objects.equals(university, student.university)) return false;
+        return Objects.equals(studentID, student.studentID);
     }
 
     @Override
@@ -85,9 +102,7 @@ public class Student {
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         result = 31 * result + (university != null ? university.hashCode() : 0);
         result = 31 * result + age;
+        result = 31 * result + (studentID != null ? studentID.hashCode() : 0);
         return result;
     }
-
-
-
 }

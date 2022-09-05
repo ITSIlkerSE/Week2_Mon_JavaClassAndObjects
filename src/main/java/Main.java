@@ -6,11 +6,11 @@ public class Main {
 
 
 
-        Student myStudent = new Student("Ilker", "Yildirim", "Otto Friedrich Uni", 16);
+        Student myStudent = new Student("Ilker", "Yildirim", "Otto Friedrich Uni", 16, "551E6");
 
-        Student myStudent2 = new Student("Tom", "Rosenzweig", "Uni Flensburg", 26);
+        Student myStudent2 = new Student("Tom", "Rosenzweig", "Uni Flensburg", 26, "561F7");
 
-        Student myStudent3 = new Student("Manu", "Wei-Min-Kao", "Uni Bonn", 44);
+        Student myStudent3 = new Student("Manu", "Wei-Min-Kao", "Uni Bonn", 44,"663G1");
 
 
         System.out.println(myStudent);
